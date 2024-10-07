@@ -1,0 +1,25 @@
+<style>
+    .header-container {
+        display: flex;
+        padding: 14px 0;
+        align-items: center;
+    }
+
+    .header-container img {
+        height: 40px;
+    }
+
+    .header-container a {
+        font-size: 3rem;
+    }
+</style>
+<header>
+	<div class="header">
+		<div class="container header-container">
+		    <img src="/header_logo_fccn.svg" alt=""/>
+			{{#if isHomePage}}<h1>{{else}}<div class="h1">{{/if}}
+				<a href="/">Accessibility Dashboard</a>
+			{{#if isHomePage}}</h1>{{else}}</div>{{/if}}
+		</div>
+	</div>
+</header>
